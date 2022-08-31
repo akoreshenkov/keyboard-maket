@@ -1,0 +1,11 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Vector 14">
+<mask id="path-1-outside-1_770_607" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16" fill="black">
+<rect fill="white" width="16" height="16"/>
+<path d="M1 7.5H5V10H11V7.5H15L8 1L1 7.5Z"/>
+<path d="M11 13H5V15H11V13Z"/>
+</mask>
+<path d="M1 7.5H5V10H11V7.5H15L8 1L1 7.5Z" stroke="#87888C" stroke-width="2" stroke-linejoin="round" mask="url(#path-1-outside-1_770_607)"/>
+<path d="M11 13H5V15H11V13Z" stroke="#87888C" stroke-width="2" stroke-linejoin="round" mask="url(#path-1-outside-1_770_607)"/>
+</g>
+</svg>
