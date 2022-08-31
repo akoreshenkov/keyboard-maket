@@ -93,7 +93,6 @@ body {
       -ms-user-select: none;
           user-select: none;
   margin: 20px 0 12px 0;
-  letter-spacing: 4px;
   font-size: 64px;
   font-weight: 700;
   color: #5a5b5d;
@@ -105,19 +104,42 @@ body {
       -ms-user-select: none;
           user-select: none;
   margin-bottom: 70px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   font-size: 24px;
   font-weight: 300;
   color: #5a5b5d;
 }
 .main-subtitle:after {
-  content: "";
+  content: "|";
   display: inline-block;
-  width: 40px;
-  height: 50px;
-  margin-bottom: -14px;
-  border-radius: 5px;
-  background: url("../img/finger.png") 50%/40px auto no-repeat;
+  width: 10px;
+  margin-left: -3px;
+  color: #48494a;
+  font-size: 24px;
+  -webkit-animation: blink 1s cubic-bezier(0, 1.76, 0, 1.64) infinite;
+          animation: blink 1s cubic-bezier(0, 1.76, 0, 1.64) infinite;
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 .board {
@@ -147,7 +169,7 @@ body {
   font-size: 16px;
 }
 .footer a {
-  color: #128cf6;
+  color: #87888C;
   font-weight: 700;
 }
 
