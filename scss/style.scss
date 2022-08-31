@@ -58,7 +58,7 @@ body {
     background: #c7c8ca;
     border: 2px solid #c9c9c9;
     box-shadow: 0 10px 0px #959595, 0 12px 0px #545454, 30px 50px 10px #b4b4b4;
-    transition: 0.25s cubic-bezier(.03,.64,.26,1);
+    transition: 0.25s cubic-bezier(.72,-0.43,.26,1.42);
     &:hover {
         transform: scale(1.1);
         //box-shadow: 0 10px 0px #8a8a8a, 30px 50px 10px #b4b4b4;
