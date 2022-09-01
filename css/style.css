@@ -88,6 +88,7 @@ body {
 }
 
 .main-title {
+  position: relative;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -96,18 +97,25 @@ body {
   font-size: 64px;
   font-weight: 700;
   color: #5a5b5d;
+  opacity: 0%;
+  -webkit-animation: appearance 0.7s cubic-bezier(1, -0.01, 0.61, 1.48) 0.5s forwards;
+          animation: appearance 0.7s cubic-bezier(1, -0.01, 0.61, 1.48) 0.5s forwards;
 }
 
 .main-subtitle {
+  position: relative;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   margin-bottom: 70px;
+  opacity: 0%;
   letter-spacing: 2px;
   font-size: 24px;
   font-weight: 300;
   color: #5a5b5d;
+  -webkit-animation: appearance 0.7s cubic-bezier(1, -0.01, 0.61, 1.48) 0.5s forwards;
+          animation: appearance 0.7s cubic-bezier(1, -0.01, 0.61, 1.48) 0.5s forwards;
 }
 .main-subtitle:after {
   content: "|";
@@ -119,30 +127,16 @@ body {
   -webkit-animation: blink 1s cubic-bezier(0, 1.76, 0, 1.64) infinite;
           animation: blink 1s cubic-bezier(0, 1.76, 0, 1.64) infinite;
 }
-@-webkit-keyframes blink {
-  0% {
-    opacity: 100%;
-  }
-  50% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-@keyframes blink {
-  0% {
-    opacity: 100%;
-  }
-  50% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
+
+.board-animation {
+  position: relative;
+  opacity: 0;
+  -webkit-animation: appearance 0.7s cubic-bezier(1, -0.01, 0.61, 1.48) 0.7s forwards;
+          animation: appearance 0.7s cubic-bezier(1, -0.01, 0.61, 1.48) 0.7s forwards;
 }
 
 .board {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 1024px;
@@ -165,8 +159,12 @@ body {
 }
 
 .footer {
+  position: relative;
   margin: 120px 0 20px 0;
   font-size: 16px;
+  opacity: 0%;
+  -webkit-animation: appearance 0.7s cubic-bezier(1, -0.01, 0.61, 1.48) 0.8s forwards;
+          animation: appearance 0.7s cubic-bezier(1, -0.01, 0.61, 1.48) 0.8s forwards;
 }
 .footer a {
   color: #87888C;
@@ -543,4 +541,54 @@ body {
   font-size: 12px;
   line-height: 60%;
   color: #87888C;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes appearance {
+  0% {
+    bottom: -100px;
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    bottom: 0px;
+    opacity: 100%;
+  }
+}
+@keyframes appearance {
+  0% {
+    bottom: -100px;
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    bottom: 0px;
+    opacity: 100%;
+  }
 }
